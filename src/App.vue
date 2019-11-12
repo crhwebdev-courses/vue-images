@@ -14,8 +14,6 @@ export default {
     HelloWorld
   }
 };
-
-const hello = "hello";
 </script>
 
 <style>
