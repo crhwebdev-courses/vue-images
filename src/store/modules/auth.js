@@ -1,3 +1,5 @@
+import api from "../../api/imgur";
+
 const state = {
   token: null
 };
@@ -12,7 +14,9 @@ const actions = {
     // to run a mutation
     commit("setToken", null);
   },
-  login: () => {}
+  login: () => {
+    api.login();
+  }
 };
 
 const mutations = {
