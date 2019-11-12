@@ -1,9 +1,9 @@
 <template>
-  <h3>I'm an App!</h3>
+  <div>Image Storage</div>
 </template>
 
 <script>
 export default {
-  name: "App"
+  name: 'AppHeader
 };
 </script>
