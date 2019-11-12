@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h3>I'm an App!</h3>
     <AppHeader />
   </div>
 </template>
