@@ -1,3 +1,4 @@
+/* eslint-disable */
 import qs from "qs";
 import imgur from "../store/credentials/imgur.js";
 import axios from "axios";

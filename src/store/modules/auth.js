@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import api from "../../api/imgur";
 import qs from "qs";
 import { router } from "../../main";

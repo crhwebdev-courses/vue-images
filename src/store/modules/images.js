@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import api from "../../api/imgur";
 
 const state = {
