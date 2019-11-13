@@ -1,6 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import App from "./App";
+import AuthHandler from "./components/AuthHandler";
 import store from "./store/";
 
 //Add VueRouter as middleware
