@@ -5,7 +5,7 @@
     </a>
     <div class="right menu">
       <div v-if="isLoggedIn">
-        Stuff
+        <a href="#" class="ui item" @click="logout">Logout</a>
       </div>
       <a v-else href="#" class="ui item" @click="login">
         Login
@@ -22,7 +22,7 @@ import { mapActions, mapGetters } from "vuex";
 export default {
   name: "AppHeader",
   methods: {
-    ...mapActions(["login"])
+    ...mapActions(["login", "logout"])
   },
   computed: {
     ...mapGetters(["isLoggedIn"])
