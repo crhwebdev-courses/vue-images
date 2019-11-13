@@ -1,4 +1,4 @@
-<tmeplate>
+<template>
   <div>Upload form</div>
 </template>
 
