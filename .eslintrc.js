@@ -1,6 +1,6 @@
-if (process.env.NODE_ENV === "development") {
-  module.exports = {
-    "no-debugger": 0,
-    "no-console": 0
-  };
-}
+module.exports = {
+  rules: {
+    "no-console": 0,
+    "no-debugger": 0
+  }
+};
