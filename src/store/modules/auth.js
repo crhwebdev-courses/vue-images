@@ -1,4 +1,3 @@
-/* eslint-disable */
 import api from "../../api/imgur";
 import qs from "qs";
 import { router } from "../../main";
@@ -18,6 +17,7 @@ const actions = {
     commit("setToken", null);
     window.localStorage.removeItem("imgur_token");
     const currentPath = router.currentRoute.path;
+    console.log(currentPath);
     if (currentPath !== "/") {
       router.push("/");
     }
