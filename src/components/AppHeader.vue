@@ -1,8 +1,8 @@
 <template>
   <div class="ui secondary pointing menu">
-    <a href="/" class="active item">
+    <router-link to="/" class="active item">
       Image Storage
-    </a>
+    </router-link>
     <div class="right menu">
       <div v-if="isLoggedIn" class="horizontal">
         <router-link to="/" class="ui item">Galleries</router-link>
