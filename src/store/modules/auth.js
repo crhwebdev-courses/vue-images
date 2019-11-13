@@ -17,7 +17,6 @@ const actions = {
     commit("setToken", null);
     window.localStorage.removeItem("imgur_token");
     const currentPath = router.currentRoute.path;
-    console.log(currentPath);
     if (currentPath !== "/") {
       router.push("/");
     }
