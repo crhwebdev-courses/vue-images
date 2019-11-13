@@ -9,7 +9,7 @@ Vue.use(VueRouter);
 
 //initialize VueRouter with routes we are using and set mode to 'history'
 // which means to use a BrowserRouter instead of HashRouter
-const router = new VueRouter({
+export const router = new VueRouter({
   mode: "history",
   routes: [{ path: "/oauth2/callback", component: AuthHandler }]
 });
