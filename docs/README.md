@@ -29,3 +29,7 @@ npm run lint
 ### Customize configuration
 
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+#### Eslint
+
+Is disabled by default in the vue.config.js file. To enable change `lintOnSave: false` to `lintOnSave: true`
