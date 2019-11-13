@@ -1,5 +1,3 @@
-/* eslint-disable */
-
 import Vuex from "vuex";
 import Vue from "vue";
 import auth from "./modules/auth";

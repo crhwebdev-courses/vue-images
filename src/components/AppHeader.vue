@@ -19,7 +19,6 @@
 </template>
 
 <script>
-/* eslint-disable */
 //Note: mapActions allows us to map our actions to methods that
 // can be used in the vue component
 import { mapActions, mapGetters } from "vuex";
