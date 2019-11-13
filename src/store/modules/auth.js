@@ -1,3 +1,4 @@
+/* eslint-disable */
 import api from "../../api/imgur";
 import qs from "qs";
 import { router } from "../../main";
@@ -16,6 +17,10 @@ const actions = {
     // to run a mutation
     commit("setToken", null);
     window.localStorage.removeItem("imgur_token");
+    const currentPath = router.currentRoute.path;
+    if (currentPath !== "/") {
+      router.push("/");
+    }
   },
   login: () => {
     api.login();
