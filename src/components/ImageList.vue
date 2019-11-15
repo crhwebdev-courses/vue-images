@@ -1,8 +1,6 @@
 <template>
-  <div>
+  <div class="image-container">
     <div v-for="image in allImages" :allImages="allImages">
-      <h4>{{ image.title }}</h4>
-      <p>{{ image.description }}</p>
       <img :src="image.link" :alt="image.title" />
     </div>
   </div>
@@ -25,3 +23,15 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.image-container {
+  column-count: 3;
+  column-gap: 0;
+}
+
+img {
+  max-width: 100%;
+  padding: 5px;
+}
+</style>
