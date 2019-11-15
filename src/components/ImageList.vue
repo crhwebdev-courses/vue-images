@@ -1,8 +1,11 @@
 <template>
-  <div class="image-container">
-    <div v-for="image in allImages" :allImages="allImages">
-      <img :src="image.link" :alt="image.title" />
+  <div>
+    <div v-if="isLoggedIn" class="image-container">
+      <div v-for="image in allImages" :allImages="allImages">
+        <img :src="image.link" :alt="image.title" />
+      </div>
     </div>
+    <h2 v-else>Login to get started</h2>
   </div>
 </template>
 
@@ -14,7 +17,7 @@ export default {
     ...mapActions(["fetchImages"])
   },
   computed: {
-    ...mapGetters(["allImages"])
+    ...mapGetters(["allImages", "isLoggedIn"])
   },
   created() {
     // Vue Lifecycle method that gets called after a component
